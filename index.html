@@ -10,7 +10,7 @@
         <script>
              const swapPhoto = (series, num) => {
                  const src = `images/untitled-${num}.jpg`
-                document.getElementById(`series-${series}-photo`).src = src
+                $(`#series-${series}-photo`).attr('src', src)
                 return false
             }
 
@@ -37,11 +37,11 @@
                 <div class='cursor-pointer' onClick="showPage('about')">about</div>
                 <div class='cursor-pointer' onClick="showPage('series-1')">works</div>
                 
-                <div class='cursor-pointer' onClick="showPage('series-1')" class='pl-2'>+ series 1</div>
-                <div class='cursor-pointer' onClick="showPage('series-2')" class='pl-2'>+ series 2</div>
-                <div class='cursor-pointer' onClick="showPage('series-3')" class='pl-2'>+ series 3</div>
+                <div class='cursor-pointer pt-2' onClick="showPage('series-1')">+ series 1</div>
+                <div class='cursor-pointer pt-2' onClick="showPage('series-2')">+ series 2</div>
+                <div class='cursor-pointer pt-2' onClick="showPage('series-3')">+ series 3</div>
 
-                <div class='cursor-pointer' onClick="showPage('contact')" class='pl-2'>contact</div>
+                <div class='cursor-pointer pt-2' onClick="showPage('contact')">contact</div>
             </div>
         </div>
 
